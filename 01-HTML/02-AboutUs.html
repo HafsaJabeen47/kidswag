@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kidswag About Us Page</title>
+
+    <!-- link CSS -->
+     <link rel="stylesheet" href="./../02-CSS/02-AboutUs.css">
+
+    <!-- "Poppins" Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Navbar 01 -->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="./../04-Images/Logo3 Final.png" alt="">
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#" onclick="home()" class="active" id="home">Home</a>
+                        <a href="#" onclick="aboutUs()" id="about">About Us</a>
+                        <a href="#" onclick="shop()" id="shop">Shop</a>
+                        <a href="#" onclick="newArrivals()" id="newArrival">New Arrivals</a>
+                        <a href="#" onclick="contact()" id="contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav-input">
+                    <input type="text" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="nav-user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div id="bar">
+                    <p id="bar-p1"></p>
+                    <p id="bar-p2"></p>
+                    <p id="bar-p3"></p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- About Us -->
+    <section class="about-us">
+        <div class="wrapper">
+            <div class="about-us-cont">
+                <div class="span-text">
+                    <span>Home</span>
+                    <span>About Us</span>
+                </div>
+
+                <h2>Get To Know Us</h2>
+            </div>
+        </div>
+     </section>
+
+
+
+
+<script src="./../03-JS/02-AboutUs.js"></script>
+</body>
+</html>
