@@ -140,6 +140,10 @@ nav ul li a:hover{
     padding: 25px;
     font-size: 22px;
     color: var(--white-color);
+    cursor: pointer;
+}
+.nav-user i:hover{
+    transform: scale(1.3);
 }
 
 /* Hero Section */
@@ -1056,7 +1060,6 @@ nav ul li a:hover{
     width: 100%;
     height: 100% ;
     background-color: rgba(0, 0, 0, 0.5);
-    transition: all .5s;
 }
 /* Modal content box */
 .modal-content-cont {
@@ -1074,6 +1077,7 @@ nav ul li a:hover{
     top: -35px;
     /* right: -100%; */
     right: -590px;
+    
 }
 .mc-header{
     width: 100%;
@@ -1090,6 +1094,9 @@ nav ul li a:hover{
     font-size: 16px;
     text-align: center;
     color: var(--dark-pink-color);
+}
+.mc-header i:hover{
+    transform: scale(1.2);
 }
 .mc-social-icons{
     display: flex;
@@ -1108,11 +1115,20 @@ nav ul li a:hover{
 #fb-icon{
     background-color: var(--facebook-icon-color);
 }
+#fb-icon:hover{
+    transform: scale(1.1);
+}
 #gmail-icon{
     background-color: var(--gmail-icon-color);
 }
+#gmail-icon:hover{
+    transform: scale(1.1);
+}
 #linkedIn-icon{
     background-color: var(--linkedIn-icon-color);
+}
+#linkedIn-icon:hover{
+    transform: scale(1.1);
 }
 
 .mc-input-cont{
@@ -1169,15 +1185,212 @@ nav ul li a:hover{
     color: var(--dark-pink-color);
 }
 
-/* ~~~~~~~~~~~~ JavaScript Class ~~~~~~~~~~~~~~ */
+/* ~~~~~~~~~~~ Modal Reset Password ~~~~~~~~~~~ */
+.reset-pwd-cont{
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100% ;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.pwd-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-family: var(--body-font);
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    width: 340px;
+    height: 70vh;
+    margin: auto ;
+    position: relative;
+    top: -35px;
+    /* right: -100%; */
+    right: -590px;
+}
+.pwd-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Footer-divider-color);
+    padding: 10px;
+}
+.pwd-top p{
 
-/* .input-star{
-    position: absolute;
-    top: 10px;
-    left: 10px;
-} */
+    font-size: 18px;
+    font-weight: 500;
+}
+.pwd-top i{
+    color: var(--dark-pink-color);
+}
+.pwd-top i:hover{
+    transform: scale(1.2);
+}
 
+.pwd-body{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pwd-body p{
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--modal-text-color);
+}
+.pwd-body input{
+    height: 50px;
+    padding: 10px;
+    border: 1px solid var(--Footer-divider-color);
+    font-size: 16px;
+    font-family: var(--body-font);
+}
+.pwd-reset-btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.pwd-reset-btn button{
+    height: 40px;
+    border-radius: 50px;
+    border: 0;
+    background-color: var(--dark-pink-color);
+    color: var(--white-color);
+    font-size: 16px;
+    padding: 10px;
+    cursor: pointer;
+}
+.pwd-reset-btn button:hover{
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+}
+.pwd-reset-btn a{
+    text-align: center;
+    color: var(--modal-text-color);
+}
+.pwd-reset-btn a:hover{
+    color: var(--dark-pink-color);
+}
 
+/* Login Modal 03  New Customer */
+.new-customer-cont{
+    display: none; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100% ;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.reg-new-customer{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: var(--body-font);
+    background-color: white;
+    padding: 20px;
+    border-bottom-left-radius: 8px;
+    width: 340px;
+    height: 70vh;
+    margin: auto ;
+    position: relative;
+    top: -35px;
+    /* right: -100%; */
+    right: -590px;
+}
+.new-customer-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 20px;
+    border-bottom: 1px solid var(--Footer-divider-color);
+}
+.new-customer-head p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.new-customer-head i{
+    color: var(--dark-pink-color);
+}
+.new-customer-head i:hover{
+    transform: scale(1.2);
+}
+.new-cust-social-icons{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.new-cust-social-icons i{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    color: var(--white-color);
+    cursor: pointer;
+}
+#reg-fb-icon{
+    background-color: var(--facebook-icon-color);
+}
+#reg-fb-icon:hover{
+    transform: scale(1.1);
+}
+#reg-gmail-icon{
+    background-color: var(--gmail-icon-color);
+}
+#reg-gmail-icon:hover{
+    transform: scale(1.1);
+}
+#reg-linkedIn-icon{
+    background-color: var(--linkedIn-icon-color);
+}
+#reg-linkedIn-icon:hover{
+    transform: scale(1.1);
+}
+.new-cust-input{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.new-cust-input input{
+    height: 40px;
+    padding: 20px 20px 20px 10px;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: var(--body-font);
+    border: 1px solid var(--Footer-divider-color);
+}
+.new-cust-reg-button{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.new-cust-reg-button button{
+    background-color: var(--dark-pink-color);
+    color: var(--white-color);
+    border: 0;
+    height: 40px;
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 10px;
+}
+.new-cust-reg-button button:hover{
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+}
+.new-cust-reg-button a{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--modal-text-color);
+}
+.new-cust-reg-button a:hover{
+    color: var(--dark-pink-color);
+}
 
 
 

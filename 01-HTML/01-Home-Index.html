@@ -52,7 +52,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="nav-user">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user" id="navbar-user"></i>
                 </div>
                 <div id="bar">
                     <p id="bar-p1"></p>
@@ -586,7 +586,7 @@
             <div class="mc-input-cont">
                 <input type="email" placeholder="Email">
                 <input type="password" placeholder="Password">
-                <a href="#">Forgot your password?</a>
+                <a href="#" id="forgot-pwd">Forgot your password?</a>
             </div>
 
             <div class="mc-signIn-cont">
@@ -596,6 +596,61 @@
             </div>
         </div>
     </div>
+
+    <!-- Login Modal 02  Reset Password -->
+    <div class="reset-pwd-cont">
+        <div class="pwd-cont">
+
+            <div class="pwd-top">
+                <p>RESET YOUR PASSWORD</p>
+                <i class="fa-solid fa-x" id="pwd-x-btn"></i>
+            </div>
+
+            <div class="pwd-body">
+                <p>Lost your password? Please enter your email address. You will receive a link to create a new password via email.</p>
+                <input type="email" placeholder="Email address">
+            </div>
+
+            <div class="pwd-reset-btn">
+                <button type="button">Reset Password</button>
+                <a href="#" id="pwd-cancel">Cancel</a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal 03  New Customer -->
+    <div class="new-customer-cont">
+        <div class="reg-new-customer">
+
+            <div class="new-customer-head">
+                <p>REGISTER</p>
+                <i class="fa-solid fa-x" id="reg-x-btn"></i>
+            </div>
+
+            <div class="new-cust-social-icons">
+                <i class="fa-brands fa-facebook-f" id="reg-fb-icon"></i>
+                <i class="fa-brands fa-google" id="reg-gmail-icon"></i>
+                <i class="fa-brands fa-linkedin-in" id="reg-linkedIn-icon"></i>
+            </div>
+
+            <div class="new-cust-input">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <div class="new-cust-reg-button">
+                <button type="button">Register</button>
+                <a href="#">Already have an account? Login here</a>
+            </div>
+
+        </div>
+    </div>
+
+
+
 
      
   
