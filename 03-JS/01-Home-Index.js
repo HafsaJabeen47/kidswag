@@ -127,3 +127,21 @@ pwdXBtn.addEventListener('click', ()=>{
 
 
 // ~~~~~~~~~~~~~~~~ New Customer Registration ~~~~~~~~~~~~~~~~
+let newCustomerReg = document.querySelector('#new-customer-Reg');
+let newCustomerCont = document.querySelector('.new-customer-cont');
+let alreadyHaveAccount = document.querySelector('#already-have-account');
+let regXBtn = document.querySelector('#reg-x-btn');
+
+newCustomerReg.addEventListener('click', ()=>{
+    newCustomerCont.style.display = 'flex';
+});
+
+alreadyHaveAccount.addEventListener('click', ()=>{
+    modalCont.style.display = 'flex';
+    newCustomerCont.style.display = 'none';
+});
+
+regXBtn.addEventListener('click', ()=>{
+    newCustomerCont.style.display = 'none';
+    modalCont.style.display = 'none';
+});
