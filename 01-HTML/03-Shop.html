@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+
+    <link rel="stylesheet" href="./../02-CSS/03-Shop.css">
+
+    <!-- "Grandstander" Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
+    <!-- "Poppins" Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+ 
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <!-- Navbar 01 -->
+    <header>
+        <div class="wrapper">
+            <nav>
+                <div class="logo">
+                    <img src="./../04-Images/Logo3 Final.png" alt="">
+                </div>
+
+                <ul>
+                    <li>
+                        <a href="#" onclick="home()" class="active" id="home">Home</a>
+                        <a href="#" onclick="aboutUs()" id="about">About Us</a>
+                        <a href="#" onclick="shop()" id="shop">Shop</a>
+                        <a href="#" onclick="newArrivals()" id="newArrival">New Arrivals</a>
+                        <a href="#" onclick="contact()" id="contact">Contact</a>
+                    </li>
+                </ul>
+
+                <div class="nav-input">
+                    <input type="text" placeholder="Search...">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="nav-user">
+                    <i class="fa-solid fa-user" id="navbar-user"></i>
+                </div>
+                <div id="bar">
+                    <p id="bar-p1"></p>
+                    <p id="bar-p2"></p>
+                    <p id="bar-p3"></p>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- About Us -->
+    <section class="about-us">
+        <div class="wrapper">
+            <div class="about-us-cont">
+                <!-- <div class="span-text">
+                    <span>Home</span>
+                    <span>About Us</span>
+                </div> -->
+
+                <p>Up to 50% SALE</p>
+                <h2>Kidswear Shop</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Arrivals 05 -->
+    <section>
+        <div class="wrapper">
+            <div class="new-arrival-cont">
+
+                <div class="new-arrival-head">
+                    <div class="new-arrival-all">
+                        <!-- <h2>KIDS WEAR</h2> -->
+                    </div>
+                    <div class="new-arrival-filter">
+                        <a href="#" class="NA-filter-active">New Born</a>
+                        <a href="#">Girls</a>
+                        <a href="#">Boys</a>
+                    </div>
+                </div>
+
+                <div class="new-arrival-body">
+                            <!-- Line One -->
+                    <div class="line-one">
+                        <div class="NA-card" id="New-Arrival-Card-1">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-1.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Pink Polkadot Dress</h4>
+                                <div class="NA-price">
+                                    <p>$130.00</p>
+                                    <span>$120.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-2">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-2.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Winter Hat Brown</h4>
+                                <div class="NA-price">
+                                    <p>$120.00</p>
+                                    <span>$105.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-3">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-3.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Plaid Shirt</h4>
+                                <div class="NA-price">
+                                    <p>$130.00</p>
+                                    <span>$125.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-4">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-4.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Striped Sundress</h4>
+                                <div class="NA-price">
+                                    <p>$135.00</p>
+                                    <span>$120.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                            <!-- Line Two -->
+                    <div class="line-two">
+                        <div class="NA-card" id="New-Arrival-Card-5">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-5.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Green Shirt & Pants</h4>
+                                <div class="NA-price">
+                                    <p>$130.00</p>
+                                    <span>$110.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-6">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-6.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Warm Shirt Green</h4>
+                                <div class="NA-price">
+                                    <p>$140.00</p>
+                                    <span>$100.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-7">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-7.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Pullover Sweet Blue</h4>
+                                <div class="NA-price">
+                                    <p>$100.00</p>
+                                    <span>$90.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-8">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-8.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Red Flower Dress</h4>
+                                <div class="NA-price">
+                                    <p>$150.00</p>
+                                    <span>$120.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                            <!-- line Three -->
+                    <div class="line-three">
+                        <div class="NA-card" id="New-Arrival-Card-9">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-9.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Beach Short</h4>
+                                <div class="NA-price">
+                                    <p>$100.00</p>
+                                    <span>$80.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-10">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-10.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Warm Jacket Green</h4>
+                                <div class="NA-price">
+                                    <p>$125.00</p>
+                                    <span>$110.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-11">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-11.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Striped Shirt</h4>
+                                <div class="NA-price">
+                                    <p>$140.00</p>
+                                    <span>$120.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                        <div class="NA-card" id="New-Arrival-Card-12">
+                            <div class="NA-product">
+                                <img src="./../04-Images/New-Arrival-12.jpg" alt="">
+                            </div>
+                            <div class="NA-text">
+                                <h4>Purple Skirt</h4>
+                                <div class="NA-price">
+                                    <p>$120.00</p>
+                                    <span>$100.00</span>
+                                </div>
+                                <button type="button">Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Footer 11 -->
+    <section class="footer">
+        <div class="wrapper">
+            <div class="footer-cont">
+
+                <div class="footer-head">
+                    <div class="Fcustomer Fchild">
+                        <div class="Fcustomer-head">
+                            <h2>CUSTOMER SERVICE</h2>
+                        </div>
+                        <div class="Fcustomer-text Fchild-text">
+                            <ul>
+                                <li>
+                                    <a href="#">Contact Us</a>
+                                    <a href="#">My Account</a>
+                                    <a href="#">Shipping</a>
+                                    <a href="#">Return & Exchange</a>
+                                    <a href="#">Tracking</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Fshop Fchild">
+                        <div class="Fshop-head">
+                            <h2>MORE WAYS TO SHOP</h2>
+                        </div>
+                        <div class="Fshop-text Fchild-text">
+                            <ul>
+                                <li>
+                                    <a href="#">All Products</a>
+                                    <a href="#">Gift Card</a>
+                                    <a href="#">Size Chart</a>
+                                    <a href="#">Store Locator</a>
+                                    <a href="#">Help Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Fabout Fchild">
+                        <div class="Fabout-head">
+                            <h2>ABOUT US</h2>
+                        </div>
+                        <div class="Fabout-text Fchild-text">
+                            <ul>
+                                <li>
+                                    <a href="#">Our Outlet</a>
+                                    <a href="#">Wholesale</a>
+                                    <a href="#">Testimonials</a>
+                                    <a href="#">Site Map</a>
+                                    <a href="#">Terms of Services</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="Fconnect Fchild">
+                        <div class="Fconnect-head">
+                            <h2>CONNECT WITH US</h2>
+                        </div>
+                        <div class="Fconnect-text Fchild-text">
+                        <p>Find out about the latest offers from kidswag</p>
+                        <div class="Finput">
+                                <input type="email" placeholder="Enter your email">
+                                <button type="button">SIGN UP</button>
+                        </div>
+                        <div id="Fhead2">
+                                <h2>Follow Us:</h2>
+                        </div>
+                        <div class="Ficons">
+                            <i class="fa-brands fa-facebook-f" id="Ficon1"></i>
+                            <i class="fa-brands fa-twitter" id="Ficon2"></i>
+                            <i class="fa-brands fa-youtube" id="Ficon3"></i>
+                            <i class="fa-brands fa-instagram" id="Ficon4"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Copyright 12 -->
+    <section class="footer-copyright">
+        <div class="wrapper">
+            <div class="footer-copy-cont">
+                <div class="footer-copy-text">
+                    <p>Copyright © 2024 Kidswag, All rights reserved. Present by Kidswag</p>
+                </div>
+                <div class="footer-imgs">
+                    <img src="./../04-Images/Footer-copyright-1.png" alt="">
+                    <img src="./../04-Images/Footer-copyright-2.png" alt="">
+                    <img src="./../04-Images/Footer-copyright-3.png" alt="">
+                    <img src="./../04-Images/Footer-copyright-4.png" alt="">
+                    <img src="./../04-Images/Footer-copyright-5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
