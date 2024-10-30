@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index HTML</title>
+    <title>Kidswag  ─ Home</title>
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./../02-CSS/01-Home-Index.css">
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- common style css -->
+    <link rel="stylesheet" href="./assets/css/index.css"> <!-- index page css -->
 
     <!-- Link CSS Media Queries -->
-    <link rel="stylesheet" href="./../02-CSS/02-Home-Media-Max-576.css">
+    <!-- <link rel="stylesheet" href="./../02-CSS/02-Home-Media-Max-576.css">
     <link rel="stylesheet" href="./../02-CSS/03-Home-Media-Min-577.css">
     <link rel="stylesheet" href="./../02-CSS/04-Home-Media-Min-769.css">
     <link rel="stylesheet" href="./../02-CSS/05-Home-Media-Min-991.css">
-    <link rel="stylesheet" href="./../02-CSS/06-Home-Media-Min-1201.css">
+    <link rel="stylesheet" href="./../02-CSS/06-Home-Media-Min-1201.css"> -->
 
     <!-- "Grandstander" Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,16 +35,16 @@
         <div class="wrapper">
             <nav>
                 <div class="logo">
-                    <img src="./../04-Images/Logo3 Final.png" alt="">
+                    <img src="./assets/images/Logo3 Final.png" alt="">
                 </div>
 
                 <ul>
                     <li>
-                        <a href="#" onclick="home()" class="active" id="home">Home</a>
-                        <a href="#" onclick="aboutUs()" id="about">About Us</a>
-                        <a href="#" onclick="shop()" id="shop">Shop</a>
-                        <a href="#" onclick="newArrivals()" id="newArrival">New Arrivals</a>
-                        <a href="#" onclick="contact()" id="contact">Contact</a>
+                        <a href="./index.html" onclick="home()" class="active" id="home">Home</a>
+                        <a href="./about.html" onclick="aboutUs()" id="about">About Us</a>
+                        <a href="./shop.html" onclick="shop()" id="shop">Shop</a>
+                        <a href="./new-arrival.html" onclick="newArrivals()" id="newArrival">New Arrivals</a>
+                        <a href="./contact.html" onclick="contact()" id="contact">Contact</a>
                     </li>
                 </ul>
 
@@ -80,7 +81,7 @@
                     </div>
 
                     <div class="img-cont">
-                        <img src="./../04-Images/hero.png" alt="">
+                        <img src="./assets/images/hero.png" alt="">
                     </div>
                 </div>
             </div>
@@ -140,11 +141,11 @@
 
                 <div class="inspired-images inspired">
                     <div class="left-imgs">
-                        <img src="./../04-Images/inspired-img1.jpg" alt="" id="insp-img1" width="300" height="300">
-                        <img src="./../04-Images/inspired-img2.jpg" alt="" id="insp-img2" width="300" height="300">
+                        <img src="./assets/images/inspired-img1.jpg" alt="" id="insp-img1" width="300" height="300">
+                        <img src="./assets/images/inspired-img2.jpg" alt="" id="insp-img2" width="300" height="300">
                     </div>
                     <div class="right-img">
-                        <img src="./../04-Images/inspired-img3.jpg" alt="" id="insp-img3" width="300" height="300">
+                        <img src="./assets/images/inspired-img3.jpg" alt="" id="insp-img3" width="300" height="300">
                     </div>
                 </div>
             </div>
@@ -172,7 +173,7 @@
                     <div class="line-one">
                         <div class="NA-card" id="New-Arrival-Card-1">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-1.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-1.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Pink Polkadot Dress</h4>
@@ -185,7 +186,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-2">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-2.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-2.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Winter Hat Brown</h4>
@@ -198,7 +199,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-3">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-3.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-3.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Plaid Shirt</h4>
@@ -211,7 +212,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-4">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-4.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-4.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Striped Sundress</h4>
@@ -223,11 +224,16 @@
                             </div>
                         </div>
                     </div>
+
+                    <!-- Show More -->
+                    <div class="show-more-cont">
+                        <input type="button" value="SHOW MORE" id="NA-more-btn">
+                    </div>
                             <!-- Line Two -->
-                    <div class="line-two">
+                    <!-- <div class="line-two">
                         <div class="NA-card" id="New-Arrival-Card-5">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-5.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-5.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Green Shirt & Pants</h4>
@@ -240,7 +246,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-6">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-6.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-6.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Warm Shirt Green</h4>
@@ -253,7 +259,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-7">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-7.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-7.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Pullover Sweet Blue</h4>
@@ -266,7 +272,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-8">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-8.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-8.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Red Flower Dress</h4>
@@ -277,12 +283,12 @@
                                 <button type="button">Add to cart</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                             <!-- line Three -->
-                    <div class="line-three">
+                    <!-- <div class="line-three">
                         <div class="NA-card" id="New-Arrival-Card-9">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-9.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-9.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Beach Short</h4>
@@ -295,7 +301,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-10">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-10.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-10.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Warm Jacket Green</h4>
@@ -308,7 +314,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-11">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-11.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-11.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Striped Shirt</h4>
@@ -321,7 +327,7 @@
                         </div>
                         <div class="NA-card" id="New-Arrival-Card-12">
                             <div class="NA-product">
-                                <img src="./../04-Images/New-Arrival-12.jpg" alt="">
+                                <img src="./assets/images/New-Arrival-12.jpg" alt="">
                             </div>
                             <div class="NA-text">
                                 <h4>Purple Skirt</h4>
@@ -332,7 +338,7 @@
                                 <button type="button">Add to cart</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -359,7 +365,7 @@
                 <div class="unique-left-img">
 
                     <div class="pink-tape">
-                        <img src="./../04-Images/Pink Tape Stcker.png" alt="">
+                        <img src="./assets/images/Pink Tape Stcker.png" alt="">
                     </div>
 
                     <div class="green-box">
@@ -397,7 +403,7 @@
                 <div class="popular-cards">
                     <div class="popular-card" id="popular-card-01">
                         <div class="pop-card-img">
-                            <img src="./../04-Images/Popular-1.jpg" alt="">
+                            <img src="./assets/images/Popular-1.jpg" alt="">
                         </div>
                         <div class="pop-card-text">
                             <h2>Boys Outfit</h2>
@@ -406,7 +412,7 @@
                     </div>
                     <div class="popular-card" id="popular-card-02">
                         <div class="pop-card-img">
-                            <img src="./../04-Images/popular-2.jpg" alt="">
+                            <img src="./assets/images/popular-2.jpg" alt="">
                         </div>
                         <div class="pop-card-text">
                             <h2>Girls Outfit</h2>
@@ -415,7 +421,7 @@
                     </div>
                     <div class="popular-card" id="popular-card-03">
                         <div class="pop-card-img">
-                            <img src="./../04-Images/Popular-3.jpg" alt="">
+                            <img src="./assets/images/Popular-3.jpg" alt="">
                         </div>
                         <div class="pop-card-text">
                             <h2>Headdress</h2>
@@ -424,7 +430,7 @@
                     </div>
                     <div class="popular-card" id="popular-card-04">
                         <div class="pop-card-img">
-                            <img src="./../04-Images/Popular-4.jpg" alt="">
+                            <img src="./assets/images/Popular-4.jpg" alt="">
                         </div>
                         <div class="pop-card-text">
                             <h2>Footwear</h2>
@@ -556,11 +562,11 @@
                     <p>Copyright © 2024 Kidswag, All rights reserved. Present by Kidswag</p>
                 </div>
                 <div class="footer-imgs">
-                    <img src="./../04-Images/Footer-copyright-1.png" alt="">
-                    <img src="./../04-Images/Footer-copyright-2.png" alt="">
-                    <img src="./../04-Images/Footer-copyright-3.png" alt="">
-                    <img src="./../04-Images/Footer-copyright-4.png" alt="">
-                    <img src="./../04-Images/Footer-copyright-5.png" alt="">
+                    <img src="./assets/images/Footer-copyright-1.png" alt="">
+                    <img src="./assets/images/Footer-copyright-2.png" alt="">
+                    <img src="./assets/images/Footer-copyright-3.png" alt="">
+                    <img src="./assets/images/Footer-copyright-4.png" alt="">
+                    <img src="./assets/images/Footer-copyright-5.png" alt="">
                 </div>
             </div>
         </div>
@@ -584,13 +590,24 @@
             </div>
 
             <div class="mc-input-cont">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
+                <div>
+                    <span id="login-span">*Please Enter Your Email and Password.</span>
+                    <input type="email" placeholder="Email" id="login-email-input" autocomplete="off">
+                    <i class="fa-solid fa-circle-check" id="login-email-success"></i> <!-- circle check --> 
+                    <i class="fa-solid fa-circle-exclamation" id="login-email-error"></i> <!-- circle error -->
+                </div>
+
+                <div>
+                    <input type="password" placeholder="Password" id="login-pwd-input" autocomplete="off">
+                    <i class="fa-solid fa-circle-check" id="login-pwd-success"></i> <!-- circle check -->
+                    <i class="fa-solid fa-circle-exclamation" id="login-pwd-error"></i> <!-- circle error -->
+                </div>
+                
                 <a href="#" id="forgot-pwd">Forgot your password?</a>
             </div>
 
             <div class="mc-signIn-cont">
-                <button type="button">Sign In</button>
+                <button type="button" id="login-btn">Sign In</button>
 
                 <a href="#" id="new-customer-Reg">New customer? Create your account</a>
             </div>
@@ -657,6 +674,6 @@
     
 
 <!-- Linked JavaScript -->
- <script src="./../03-JS/01-Home-Index.js"></script>
+ <!-- <script src="./assets/js/index.js"></script> -->
 </body>
 </html>

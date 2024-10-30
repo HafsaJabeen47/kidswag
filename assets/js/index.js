@@ -52,7 +52,6 @@ function aboutUs(){
 }
 
 // Clickable Logo
-
 let logo = document.querySelector('.logo');
 
 logo.addEventListener('click', ()=>{
@@ -68,6 +67,7 @@ let modalCont = document.querySelector('.modal-cont');
 
 navbarUser.addEventListener('click', ()=>{
     modalCont.style.display = 'flex';
+    navbarUser.style.color = 'var(--text-green-color)';
     // modalCont.style.transiton = '.5s';
 });
 
@@ -77,6 +77,7 @@ let mdlXBtn = document.querySelector('#mdl-x-btn');
 
 mdlXBtn.addEventListener('click', ()=>{
     modalCont.style.display = 'none';
+    navbarUser.style.color = 'white';
 });
 
 //Hide Modal if click anywhere outside the modal
@@ -123,6 +124,7 @@ pwdCancel.addEventListener('click', ()=>{
 pwdXBtn.addEventListener('click', ()=>{
     modalCont.style.display = 'none';
     resetPwdCont.style.display = 'none';
+    navbarUser.style.color = 'white';
 });
 
 
@@ -144,4 +146,40 @@ alreadyHaveAccount.addEventListener('click', ()=>{
 regXBtn.addEventListener('click', ()=>{
     newCustomerCont.style.display = 'none';
     modalCont.style.display = 'none';
+    navbarUser.style.color = 'white';
+});
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~ Home page New Arrival Show More Button ~~~~~~~~~~~~~~~~~~~~~~~~~
+let NAmoreBtn = document.querySelector('#NA-more-btn');
+
+NAmoreBtn.addEventListener('click', ()=>{
+    window.open('file:///E:/Kids%20Swag.com/01-HTML/04-NewArrivals.html');
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~ Login User Email & Password Setting (Modal 01) ~~~~~~~~~~~~~~~~~~~~~~~~~~
+let loginEmailInput = document.querySelector('#login-email-input');
+let loginPwdInput = document.querySelector('#login-pwd-input');
+let loginBtn = document.querySelector('#login-btn');
+
+let loginSpan = document.querySelector('#login-span');
+
+
+loginBtn.addEventListener('click', ()=>{
+   loginSpan.style.display = 'block'; 
+   loginEmailInput.style.border = '1px solid red';
+   loginPwdInput.style.border = '1px solid red';
 });

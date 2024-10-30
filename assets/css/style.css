@@ -276,18 +276,15 @@ nav ul li a:hover{
 
 .girls-card{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), 
-                url('./../04-Images/Girl-Card-1.jpg') no-repeat;
+                url('./../images/Girl-Card-1.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-/* .girls-card:hover{
-   transform: scale(1.1);
-} */
 
 .boys-card{
     background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), 
-                url('./../04-Images/Boy-Card-2.jpg') no-repeat;
+                url('./../images/Boy-Card-2.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -429,7 +426,7 @@ nav ul li a:hover{
 /* New Arrivals */
 .new-arrival-cont{
     width: 100%;
-    height: 1780px;
+    /*height: 1780px;*/          /* mene content hide kia so height b kam ki */
     padding: 70px 0;
 }
 
@@ -496,19 +493,30 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    width: 300px;
+    gap: 20px;
+    /* width: 300px; */
+    width: 290px;
     height: 472px;
     background-color: var(--white-color);
     box-shadow: rgba(149, 157, 165, 0.3) 0px 8px 24px;
     border-radius: 5px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    padding-top: 20px;
 }
 
 .NA-card .NA-product img{
-    width: 280px;
+    /* width: 280px; */
+    width: 250px;
+    height: 250px;
     border-radius: 5px;
+    transition: 0.3s ease;
+    /* transform: scale(1.1); */
 }
+.NA-product img:hover{
+        transform: scale(1.1);
+        /* transform: scale(1); */
+}
+
 
 .NA-text{
     display: flex;
@@ -552,11 +560,37 @@ nav ul li a:hover{
     letter-spacing: 0.5px;
     margin-top: 10px;
     padding: 5px;
+    cursor: pointer;
 }
 .NA-text button:hover{
     background-color: var(--yellow-color);
     color: var(--black-color);
 }
+
+/* New Arrival Show More Button */
+.show-more-cont input{
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: var(--yellow-color);
+    color: var(--black-color);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-family: var(--body-font);
+    margin-top: 10px;
+    cursor: pointer;
+}
+.show-more-cont input:hover{
+    background-color: var(--dark-pink-color);
+    color: var(--white-color);
+}
+
+
+
+
 
 
 /* Animated Slider  */
@@ -567,7 +601,7 @@ nav ul li a:hover{
     justify-content: center;
     align-items: center;
     background: linear-gradient(rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0.6)),
-    url('./../04-Images/Hero-img-03.jpg');
+    url('./../images/Hero-img-03.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -618,7 +652,7 @@ nav ul li a:hover{
 .unique-style{
     width: 100%;
     height: 600px;
-    background: url('./../04-Images/print-background.png');
+    background: url('./../images/print-background.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -639,7 +673,7 @@ nav ul li a:hover{
     height: 424px;
     border: 12px solid white;
     border-radius: 10px;
-    background: url('./../04-Images/Long\ jacket.jpg');
+    background: url('./../images/Long\ jacket.jpg');
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -827,7 +861,7 @@ nav ul li a:hover{
 .add-discount-cont .add-discount-left{
     width: 742px;
     height: 556px;
-    background: url('./../04-Images/additional-discount-background.jpg');
+    background: url('./../images/additional-discount-background.jpg');
     background-size: cover;
     background-position: center right;
     mix-blend-mode:multiply;
@@ -870,7 +904,7 @@ nav ul li a:hover{
 .pink-bottom{
     width: 100%;
     height: 456px;
-    background: url('./../04-Images/pink-bottom\ background.jpg') no-repeat;
+    background: url('./../images/pink-bottom\ background.jpg') no-repeat;
     background-size: cover;
     background-position: center center;
 }
@@ -1060,6 +1094,7 @@ nav ul li a:hover{
     width: 100%;
     height: 100% ;
     background-color: rgba(0, 0, 0, 0.5);
+    /* z-index: 999; */
 }
 /* Modal content box */
 .modal-content-cont {
@@ -1135,15 +1170,67 @@ nav ul li a:hover{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    position: relative;
 }
 .mc-input-cont input{
+    width: 100%;
     height: 40px;
     border-radius: 5px;
     border: 1px solid var(--Footer-divider-color);
     padding: 10px;
     font-family: var(--body-font);
     position: relative;
-    /* outline: 1px solid var(--dark-pink-color); */
+}
+
+/* Circle check and error icons will be show through JS */
+.mc-input-cont i{
+    font-size: 12px;
+}
+.mc-input-cont .fa-circle-check{
+    color: var(--text-green-color);
+}
+.mc-input-cont .fa-circle-exclamation{
+    color: orange;
+}
+#login-email-success{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+#login-pwd-success{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 75px;
+}
+#login-email-error{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 14px;
+}
+#login-pwd-error{
+    display: none;
+    position: absolute;
+    right: 10px;
+    top: 75px;
+}
+.mc-input-cont span{
+    display: none;
+    font-size: 13px;
+    color: red;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+.mc-input-cont input:focus{
+    outline: 1px solid grey;
 }
 .mc-input-cont a{
     text-align: center;
@@ -1247,6 +1334,9 @@ nav ul li a:hover{
     border: 1px solid var(--Footer-divider-color);
     font-size: 16px;
     font-family: var(--body-font);
+}
+.pwd-body input:focus{
+    outline: 1px solid grey;
 }
 .pwd-reset-btn{
     display: flex;
@@ -1363,6 +1453,9 @@ nav ul li a:hover{
     font-weight: 400;
     font-family: var(--body-font);
     border: 1px solid var(--Footer-divider-color);
+}
+.new-cust-input input:focus{
+    outline: 1px solid grey;
 }
 .new-cust-reg-button{
     display: flex;
