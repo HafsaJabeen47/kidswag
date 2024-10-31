@@ -158,6 +158,20 @@ regXBtn.addEventListener('click', ()=>{
 // });
 
 
+// Pink frock add to cart button
+let pinkFrock = document.querySelector('#pink-frock');
+
+pinkFrock.addEventListener('click', ()=>{
+    window.open('file:///E:/kidswag.com/productdetails.html');
+});
+
+
+// Go to shop button from index.html pink bottom section
+let goToShop = document.querySelector('#gotoshop');
+
+goToShop.addEventListener('click', ()=>{
+    window.open('file:///E:/kidswag.com/shop.html');
+});
 
 
 
