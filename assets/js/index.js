@@ -150,12 +150,12 @@ regXBtn.addEventListener('click', ()=>{
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~ Home page New Arrival Show More Button ~~~~~~~~~~~~~~~~~~~~~~~~~
-let NAmoreBtn = document.querySelector('#NA-more-btn');
+// let NAmoreBtn = document.querySelector('#NA-more-btn');
 
-NAmoreBtn.addEventListener('click', ()=>{
-    window.open('file:///E:/Kids%20Swag.com/01-HTML/04-NewArrivals.html');
+// NAmoreBtn.addEventListener('click', ()=>{
+//     window.open('file:///E:/Kids%20Swag.com/01-HTML/04-NewArrivals.html');
 
-});
+// });
 
 
 

@@ -568,7 +568,7 @@ nav ul li a:hover{
 }
 
 /* New Arrival Show More Button */
-.show-more-cont input{
+.show-more-cont button{
     width: 200px;
     height: 50px;
     border-radius: 5px;
@@ -583,7 +583,7 @@ nav ul li a:hover{
     margin-top: 10px;
     cursor: pointer;
 }
-.show-more-cont input:hover{
+.show-more-cont button:hover{
     background-color: var(--dark-pink-color);
     color: var(--white-color);
 }

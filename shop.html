@@ -6,7 +6,8 @@
     <title>Shop ─ Kidswag</title>
 
     <!-- Link CSS -->
-    <link rel="stylesheet" href="./assets/css/shop.css">
+    <link rel="stylesheet" href="./assets/css/style.css"> <!-- common style css -->
+    <link rel="stylesheet" href="./assets/css/shop.css">  <!-- shop page css -->
 
     <!-- "Grandstander" Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,11 +34,11 @@
 
                 <ul>
                     <li>
-                        <a href="./index.html" onclick="home()" id="home">Home</a>
-                        <a href="./about.html" onclick="aboutUs()" id="about">About Us</a>
-                        <a href="./shop.html" onclick="shop()" class="active" id="shop">Shop</a>
-                        <a href="./new-arrival.html" onclick="newArrivals()" id="newArrival">New Arrivals</a>
-                        <a href="./contact.html" onclick="contact()" id="contact">Contact</a>
+                        <a href="./index.html" id="home">Home</a>
+                        <a href="./about.html" id="about">About Us</a>
+                        <a href="./shop.html" class="active" id="shop">Shop</a>
+                        <a href="./new-arrival.html" id="newArrival">New Arrivals</a>
+                        <a href="./contact.html" id="contact">Contact</a>
                     </li>
                 </ul>
 
@@ -57,14 +58,10 @@
         </div>
     </header>
 
-    <!-- About Us -->
-    <section class="about-us">
+    <!-- Shop -->
+    <section class="shop">
         <div class="wrapper">
-            <div class="about-us-cont">
-                <!-- <div class="span-text">
-                    <span>Home</span>
-                    <span>About Us</span>
-                </div> -->
+            <div class="shop-cont">
 
                 <p>Up to 50% SALE</p>
                 <h2>Kidswear Shop</h2>
@@ -258,6 +255,57 @@
             </div>
         </div>
 
+    </section>
+
+    <!-- Popular Categories 08 -->
+    <section class="popular-categories">
+        <div class="wrapper">
+            <div class="popular-cont">
+
+                <div class="popular-text">
+                    <h2>Popular Categories</h2>
+                </div>
+
+                <div class="popular-cards">
+                    <div class="popular-card" id="popular-card-01">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/Popular-1.jpg" alt="">
+                        </div>
+                        <div class="pop-card-text">
+                            <h2>Boys Outfit</h2>
+                            <button type="button">PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="popular-card" id="popular-card-02">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/popular-2.jpg" alt="">
+                        </div>
+                        <div class="pop-card-text">
+                            <h2>Girls Outfit</h2>
+                            <button type="button">PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="popular-card" id="popular-card-03">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/Popular-3.jpg" alt="">
+                        </div>
+                        <div class="pop-card-text">
+                            <h2>Headdress</h2>
+                            <button type="button">PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="popular-card" id="popular-card-04">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/Popular-4.jpg" alt="">
+                        </div>
+                        <div class="pop-card-text">
+                            <h2>Footwear</h2>
+                            <button type="button">PRODUCT</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Footer 11 -->

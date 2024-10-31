@@ -9,13 +9,6 @@
     <link rel="stylesheet" href="./assets/css/style.css"> <!-- common style css -->
     <link rel="stylesheet" href="./assets/css/index.css"> <!-- index page css -->
 
-    <!-- Link CSS Media Queries -->
-    <!-- <link rel="stylesheet" href="./../02-CSS/02-Home-Media-Max-576.css">
-    <link rel="stylesheet" href="./../02-CSS/03-Home-Media-Min-577.css">
-    <link rel="stylesheet" href="./../02-CSS/04-Home-Media-Min-769.css">
-    <link rel="stylesheet" href="./../02-CSS/05-Home-Media-Min-991.css">
-    <link rel="stylesheet" href="./../02-CSS/06-Home-Media-Min-1201.css"> -->
-
     <!-- "Grandstander" Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,11 +33,11 @@
 
                 <ul>
                     <li>
-                        <a href="./index.html" onclick="home()" class="active" id="home">Home</a>
-                        <a href="./about.html" onclick="aboutUs()" id="about">About Us</a>
-                        <a href="./shop.html" onclick="shop()" id="shop">Shop</a>
-                        <a href="./new-arrival.html" onclick="newArrivals()" id="newArrival">New Arrivals</a>
-                        <a href="./contact.html" onclick="contact()" id="contact">Contact</a>
+                        <a href="./index.html" class="active" id="home">Home</a>
+                        <a href="./about.html" id="about">About Us</a>
+                        <a href="./shop.html" id="shop">Shop</a>
+                        <a href="./new-arrival.html" id="newArrival">New Arrivals</a>
+                        <a href="./contact.html" id="contact">Contact</a>
                     </li>
                 </ul>
 
@@ -227,7 +220,7 @@
 
                     <!-- Show More -->
                     <div class="show-more-cont">
-                        <input type="button" value="SHOW MORE" id="NA-more-btn">
+                        <a href="./newarrival.html"><button type="button" id="NA-more-btn">SHOW MORE</button></a>
                     </div>
                             <!-- Line Two -->
                     <!-- <div class="line-two">
@@ -342,7 +335,6 @@
                 </div>
             </div>
         </div>
-
     </section>
 
     <!-- Animated Slider 06 -->
@@ -352,7 +344,7 @@
                 <div class="slider-text">
                     <h2>The best quality garment at affordable prices</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    <button type="button">GO TO SHOP</button>
+                    <a href="./shop.html"><button type="button">GO TO SHOP</button></a>
                 </div>
             </div>
         </div>

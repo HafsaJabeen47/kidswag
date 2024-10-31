@@ -26,8 +26,8 @@
 // });
 
 // Clickable Logo
-let logo = document.querySelector('.logo');
+// let logo = document.querySelector('.logo');
 
-logo.addEventListener('click', ()=>{
-    window.open('file:///E:/Kids%20Swag.com/01-HTML/01-Home-Index.html#', '_self');
-});
+// logo.addEventListener('click', ()=>{
+//     window.open('file:///E:/Kids%20Swag.com/01-HTML/01-Home-Index.html#', '_self');
+// });
