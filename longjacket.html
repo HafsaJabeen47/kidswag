@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us ─ Kidswag</title>
+    <title>Unique Style Long Jacket ─ Kidswag</title>
 
-    <!-- link CSS -->
+    <!-- Link CSS -->
     <link rel="stylesheet" href="./assets/css/style.css"> <!-- common style css -->
-    <link rel="stylesheet" href="./assets/css/about.css"> <!-- about page css -->
+    <link rel="stylesheet" href="./assets/css/longjacket.css"> <!-- long jacket page css -->
 
+    <!-- "Grandstander" Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+ 
     <!-- "Poppins" Font Family -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Grandstander:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
+ 
     <!-- Fontawesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
@@ -23,13 +28,13 @@
         <div class="wrapper">
             <nav>
                 <div class="logo">
-                    <a href="./index.html"><img src="./assets/images/Logo3 Final.png" alt=""></a>
+                   <a href="./index.html"><img src="./assets/images/Logo3 Final.png" alt=""></a>
                 </div>
 
                 <ul>
                     <li>
-                        <a href="./index.html" id="home">Home</a>
-                        <a href="./about.html" class="active" id="about">About Us</a>
+                        <a href="./index.html" class="active" id="home">Home</a>
+                        <a href="./about.html" id="about">About Us</a>
                         <a href="./shop.html" id="shop">Shop</a>
                         <a href="./newarrival.html" id="newArrival">New Arrivals</a>
                         <a href="./contact.html" id="contact">Contact</a>
@@ -41,7 +46,7 @@
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <div class="nav-user">
-                    <i class="fa-solid fa-user"></i>
+                    <i class="fa-solid fa-user" id="navbar-user"></i>
                 </div>
                 <div id="bar">
                     <p id="bar-p1"></p>
@@ -52,111 +57,80 @@
         </div>
     </header>
 
-    <!-- About Us -->
-    <section class="about-us">
+    
+    
+
+
+
+
+
+
+
+
+    <!-- Popular Categories 08 -->
+    <section class="popular-categories">
         <div class="wrapper">
-            <div class="about-us-cont">
-                <div class="span-text">
-                    <span>Home</span>
-                    <span>About Us</span>
+            <div class="popular-cont">
+
+                <div class="popular-text">
+                    <h2>Popular Categories</h2>
                 </div>
 
-                <h2>Get To Know Us</h2>
-            </div>
-        </div>
-     </section>
-
-     <!-- Get Inspired 04 -->
-     <section class="get-inspired">
-        <div class="wrapper">
-            <div class="inspired-cont">
-                <div class="inspired-text inspired">
-                    <div class="insp-text1">
-                        <span>Get Inspired</span>
-                        <h2>Clothing for the little sunshine</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    </div>
-                    <div class="insp-text2">
-                        <div class="insp-txt">
-                            <div class="icon">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                            <div class="icon-text">
-                                <h3>Wide selection of clothes</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit    tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                            </div>
+                <div class="popular-cards">
+                    <div class="popular-card" id="popular-card-01">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/Popular-1.jpg" alt="">
                         </div>
-                        <div class="insp-txt">
-                            <div class="icon">
-                                <i class="fa-solid fa-check"></i>
-                            </div>
-                            <div class="icon-text">
-                                <h3>Wide selection of clothes</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit    tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                            </div>
+                        <div class="pop-card-text">
+                            <h2>Boys Outfit</h2>
+                            <button type="button">PRODUCT</button>
                         </div>
                     </div>
-                </div>
-
-                <div class="inspired-images inspired">
-                    <div class="left-imgs">
-                        <img src="./assets/images/inspired-img1.jpg" alt="" id="insp-img1" width="300" height="300">
-                        <img src="./assets/images/inspired-img2.jpg" alt="" id="insp-img2" width="300" height="300">
-                    </div>
-                    <div class="right-img">
-                        <img src="./assets/images/inspired-img3.jpg" alt="" id="insp-img3" width="300" height="300">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Unique Style 07 -->
-    <section class="unique-style">
-        <div class="wrapper">
-            <div class="unique-cont">
-                <div class="unique-left-img">
-
-                    <div class="pink-tape">
-                        <img src="./assets/images//Pink Tape Stcker.png" alt="">
-                    </div>
-
-                    <div class="green-box">
-                        <span>15+</span>
-                        <p>Years of Experience</p>
-                    </div>
-
-                    <div class="left-text">
-                        <h2>Sweet Long Jacket</h2>
-                        <div class="left-text-span">
-                            <p>$125</p>
+                    <div class="popular-card" id="popular-card-02">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/popular-2.jpg" alt="">
+                        </div>
+                        <div class="pop-card-text">
+                            <h2>Girls Outfit</h2>
+                            <button type="button">PRODUCT</button>
                         </div>
                     </div>
-                </div>
-
-                <div class="unique-right-text">
-                    <span>Our Value</span>
-                    <h2>Get a unique and authentic style </h2>
-                    <p>Mauris lorem aenean condimentum eu nec egestas sodales sit commodo laoreet. Neque id venenatis pede turpis viverra. Massa lobortis pulvinar justo scelerisque platea a ad volutpat netus.</p>
-                    <button type="button">DISCOVER MORE</button>
+                    <div class="popular-card" id="popular-card-03">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/Popular-3.jpg" alt="">
+                        </div>
+                        <div class="pop-card-text">
+                            <h2>Headdress</h2>
+                            <button type="button">PRODUCT</button>
+                        </div>
+                    </div>
+                    <div class="popular-card" id="popular-card-04">
+                        <div class="pop-card-img">
+                            <img src="./assets/images/Popular-4.jpg" alt="">
+                        </div>
+                        <div class="pop-card-text">
+                            <h2>Footwear</h2>
+                            <button type="button">PRODUCT</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Animated Slider 06 -->
-    <section class="animated-slider">
+    <!-- Pink Bottom 10 -->
+    <section class="pink-bottom">
         <div class="wrapper">
-            <div class="ani-slider-cont">
-                <div class="slider-text">
-                    <h2>The best quality garment at affordable prices</h2>
+            <div class="pink-bottom-cont">
+                <div class="pink-bottom-text">
+                    <h2>Every child deserves to look the best</h2>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-                    <button type="button">GO TO SHOP</button>
+                    <button type="button" id="gotoshop">GO TO SHOP</button>
                 </div>
             </div>
         </div>
     </section>
-
+    
     <!-- Footer 11 -->
     <section class="footer">
         <div class="wrapper">
@@ -257,9 +231,5 @@
         </div>
     </section>
 
-
-
-
-<!-- <script src="./assets/js/about.js"></script> -->
 </body>
 </html>
